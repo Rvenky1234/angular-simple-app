@@ -30,6 +30,7 @@ pipeline {
            echo "Starting Build"
            sh 'npm install'
            sh 'npm install @angular-devkit/core --save-dev'
+           sh 'npm install -g ember-cli'
            sh 'ng build'
          }
        }
