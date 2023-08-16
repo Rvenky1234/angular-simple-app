@@ -28,6 +28,7 @@ pipeline {
 
          steps {
            echo "Starting Build"
+           sh 'npm install'
            sh 'ng build'
          }
        }
