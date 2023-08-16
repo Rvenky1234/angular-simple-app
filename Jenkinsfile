@@ -28,6 +28,7 @@ pipeline {
 
          steps {
            echo "Starting Build"
+           sh 'npm update -g @angular/cli'
            sh 'npm install'
            sh 'npm install @angular-devkit/core --save-dev'
            sh 'npm install -g ember-cli'
