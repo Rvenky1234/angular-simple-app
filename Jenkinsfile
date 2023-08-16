@@ -29,6 +29,7 @@ pipeline {
          steps {
            echo "Starting Build"
            sh 'npm install'
+           sh 'npm install @angular-devkit/core --save-dev'
            sh 'ng build'
          }
        }
